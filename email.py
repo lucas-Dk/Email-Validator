@@ -1,3 +1,4 @@
+
 import re
 import getpass
 import time
@@ -54,6 +55,9 @@ while True:
         if senha == repita:
                 if valid:
                         print("Senha válida, pode entrar!\n")
+                else:
+                        print("\033[31mERROR!\033[m Email inválido e senha ignorada!")
+
         else:
                 print("\033[31mERROR!\033[m Senha inserida está inválida ou desigual!")
 
